@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main File</title>
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Karantina:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul class="container">
+            <div id="logo">
+                <img src="kl.png" alt="Rishabh Refrigeration">
+            </div>
+            <li class="item1 zoom">
+                <a href="index.html"> <strong>HOME</strong></a>
+            </li>
+            <li class="item2 zoom">
+                <a href="about.html"> <strong>ABOUT US</strong></a>
+            </li>
+            <li class="item3 zoom">
+                <a href="service.html"> <strong>SERVICES</strong></a>
+            </li>
+            <li class="item4 zoom">
+                <a href="contact.html"> <strong>CONTACT US</strong></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="top_nav">
+        <div class="logo1">
+            <img src="logo2.jpeg" alt="">
+        </div>
+        <div class="icon">
+            <a href="#" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        </div>
+        <div class="nav_items" id="nav_rs">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+            </ul>
+            <ul>
+                <li><a href="service.html">SERVICES</a></li>
+            </ul>
+            <ul>
+                <li> <a href="contact.html">CONTACT US</a></li>
+            </ul>
+
+
+
+        </div>
+    </div>
+    <hr>
+    <section id="home">
+
+        <div id="pump" class="center zoom">
+            <h2 class="center">Vacuum-Pump</h2>
+            <a href="Vacuum-pump.jpg" target="_blank"><img src="Vacuum-pump.jpg" alt="Vacuum pump"></a>
+        </div>
+        <div id="tool" class="center zoom">
+            <h2>Tools</h2>
+            <a href="Tools.jpg" target="_blank"><img src="Tools.jpg" alt="Top-Tool"></a>
+        </div>
+        <div id="cans" class="center zoom">
+            <h2>Gas-Can</h2>
+            <a href="Gas-cans.jpg" target="_blank"><img src="Gas-cans.jpg" alt="Gas-Can"></a>
+        </div>
+
+
+    </section>
+    <footer id="footer">
+        <h2>Rishabh Refrigeration </h2>
+        <div class="add ">
+            <p>
+                <Strong>Add:</Strong> Shop No.17 <br> Sector No.5 <br> Hemu Circle <br> Jai Narayan Vyas Colony <br> <b>Mobile No.+919780227451/9116432451</b> </p>
+            <p>City:Bikaner <br> State:Rajasthan <br>Country:India</p>
+
+        </div>
+
+    </footer>
+    <hr class="hd" style="padding-top: 0px; margin-top:0px;">
+    <p class="hdr">© 2021 Rishabh Refrigeration Service, Inc. <br> Website Created By:
+        <a href="https://www.instagram.com/kewalswami.kr01" target="_blank" class="fa fa-instagram "></a>
+        <a href="https://www.linkedin.com/in/kewal-swami-65b32b19a" class="fa fa-linkedin " target="_blank"></a>
+    </p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("nav_rs");
+            if (x.className === "nav_items") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav_items";
+            }
+        }
+    </script>
+</body>
+
+
+</html>

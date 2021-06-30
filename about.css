@@ -1,0 +1,204 @@
+/* Navbar */
+
+body {
+    /* background: url('about/about.jpg') no-repeat center/cover; */
+    background: linear-gradient(yellow, green);
+}
+
+#logo img {
+    width: 254px;
+    height: 117px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #2d2c2c;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 37px 50px;
+    font-size: 1.3rem;
+}
+
+#navbar ul {
+    display: flex;
+    float: right;
+    padding: 0px 190px;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(41, 41, 41);
+    opacity: .6;
+}
+
+
+/* Home */
+
+
+/* #container::before {
+    content: "";
+    background: url('about/about.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 110%;
+    width: 100%;
+    z-index: -2;
+    /* opacity: .5; */
+
+
+/* Utility classes */
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+    color: whitesmoke;
+    margin: 0px 90px;
+}
+
+h1 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 40px;
+    color: yellow;
+}
+
+
+/* Top_nav */
+
+.top_nav {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #navbar {
+        display: none;
+    }
+    .top_nav {
+        display: block;
+    }
+    .icon {
+        font-size: 35px;
+        background: #001f44;
+        text-align: right;
+        /* z-index: -2; */
+    }
+    .icon,
+    .nav_items {
+        position: relative;
+        top: -73px;
+        right: 0px;
+    }
+    .icon a i {
+        color: #fff;
+    }
+    .nav_items {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #00316b;
+    }
+    .nav_items ul li {
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 2px 10px 2px;
+    }
+    .nav_items ul li:hover {
+        background: #006740;
+        border: 2px solid #006740;
+        border-radius: 4px;
+    }
+    .nav_items ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo1 img {
+        width: 129px;
+        height: 62px;
+        position: relative;
+        top: 69px;
+        left: center;
+    }
+    .responsive {
+        display: flex;
+    }
+    p {
+        font-size: 20px;
+        margin: 0px 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    #navbar ul li {
+        list-style: none;
+        padding: 37px 45px;
+        font-size: 1.3rem;
+    }
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 70px;
+    }
+    #logo img {
+        width: 240px;
+        height: 100px;
+    }
+    #navbar ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 20px;
+    }
+    #navbar ul li a {
+        font-size: 18px;
+    }
+    #logo img {
+        padding-top: 4px;
+        width: 187px;
+        height: 111px;
+    }
+}
+
+@media screen and (max-width:1290px) and (min-width:1036px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 140px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 200px;
+    }
+    #logo img {
+        position: absolute;
+        top: 23px;
+        left: 150px;
+    }
+}
+
+@media screen and (max-width:362px) {
+    p {
+        margin: 0px 0px;
+    }
+}

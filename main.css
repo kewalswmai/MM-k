@@ -1,0 +1,130 @@
+        * {
+            box-sizing: border-box;
+            /* overflow: hidden; */
+        }
+        /* Logo image */
+        
+        #logo img {
+            width: 280px;
+            height: 117px;
+        }
+        
+        #navbar ul li a {
+            text-decoration: none;
+            color: #2d2c2c;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            padding: 37px 50px;
+            font-size: 1.3rem;
+        }
+        
+        #navbar ul {
+            display: flex;
+            float: right;
+            padding: 0px 230px;
+        }
+        
+        .top_nav {
+            display: none;
+        }
+        
+        #navbar::before {
+            content: "";
+            background: url('Main1.jpg') no-repeat center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 68%;
+            width: 100%;
+            z-index: -2;
+            opacity: .9;
+        }
+        
+        hr {
+            width: 80%;
+            height: 2px;
+            background-color: rgb(41, 41, 41);
+            opacity: .6;
+        }
+        /* Home */
+        
+        #home {
+            display: flex;
+            /* border: 2px solid red; */
+            /* align-items: center; */
+            height: 300px;
+            /* padding-top: 0px; */
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        
+        #home img {
+            height: 138px;
+            width: 200px;
+            border: 2px solid grey;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        /* Footer  */
+        
+        #home::before {
+            content: "";
+            background: gray;
+            position: absolute;
+            top: 70%;
+            left: 0px;
+            height: 40%;
+            width: 100%;
+            z-index: -2;
+            opacity: .6;
+        }
+        
+        #footer h2 {
+            position: relative;
+            top: 23px;
+            padding-top: 0px;
+            font-size: 30px;
+            color: #f6df61;
+            font-weight: 700;
+        }
+        
+        .add {
+            display: flex;
+            justify-content: right;
+            padding-left: 62%;
+            font-size: 1.1rem;
+            font-family: 'Open Sans', sans-serif;
+            position: relative;
+            top: -40px;
+            left: -115px;
+        }
+        
+        .add p {
+            color: #42382cc7;
+            padding-top: 0px;
+        }
+        /* Utility Classes */
+        
+        .zoom {
+            transition: transform .3s;
+        }
+        
+        .zoom:hover {
+            transform: scale(1.2);
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        h2 {
+            font-family: 'Zen Dots', cursive;
+        }
+        /* Responsive Navbar */
+        
+        .top_nav {
+            display: none;
+        }

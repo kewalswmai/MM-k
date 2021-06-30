@@ -1,0 +1,264 @@
+/* Navbar */
+
+body {
+    /* background: url('services/servicess.jpg') no-repeat center/cover; */
+    background: linear-gradient(indigo, white);
+}
+
+#logo img {
+    width: 254px;
+    height: 117px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #2d2c2c;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 37px 50px;
+    font-size: 1.3rem;
+}
+
+#navbar ul {
+    display: flex;
+    float: right;
+    padding: 0px 190px;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(41, 41, 41);
+    opacity: .6;
+}
+
+
+/* Home */
+
+h1 {
+    text-align: center;
+    color: royalblue;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#btn1 p {
+    font-family: 'Fugaz One', cursive;
+    font-size: 24px;
+    margin: 0px 60px;
+    color: white;
+}
+
+#container .box1 {
+    margin: 40px 3px;
+    padding: 3px 6px;
+    /* border: 2px solid red;
+    border-radius: 23px;*/
+    background: rgba(255, 255, 255, .5);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+}
+
+#container .box1 img {
+    height: 250px;
+    border-radius: 15px;
+    padding-top: 0px;
+    display: block;
+    margin-top: 0px;
+    float: right;
+}
+
+#container .box2 {
+    margin: 40px 3px;
+    padding: 3px 6px;
+    /* border: 2px solid red;
+    border-radius: 23px;*/
+    background: rgba(255, 255, 255, .5);
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 30px;
+}
+
+#container .box2 img {
+    height: 250px;
+    border-radius: 15px;
+    padding-top: 30px;
+    display: block;
+    margin-top: 0px;
+    float: left;
+}
+
+
+/* Parts */
+
+.parts {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, .5);
+}
+
+
+/* Utility */
+
+h1,
+h2 {
+    text-shadow: 2px 2px grey;
+}
+
+.zoom {
+    transition: transform .3s;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* Top_nav */
+
+.top_nav {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #navbar {
+        display: none;
+    }
+    .top_nav {
+        display: block;
+    }
+    .icon {
+        font-size: 35px;
+        background: #001f44;
+        text-align: right;
+        /* z-index: -2; */
+    }
+    .icon,
+    .nav_items {
+        position: relative;
+        top: -73px;
+        right: 0px;
+    }
+    .icon a i {
+        color: #fff;
+    }
+    .nav_items {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #00316b;
+    }
+    .nav_items ul li {
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 2px 10px 2px;
+    }
+    .nav_items ul li:hover {
+        background: #006740;
+        border: 2px solid #006740;
+        border-radius: 4px;
+    }
+    .nav_items ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo1 img {
+        width: 129px;
+        height: 62px;
+        position: relative;
+        top: 69px;
+        left: center;
+    }
+    .responsive {
+        display: flex;
+    }
+    #btn1 p {
+        font-size: 20px;
+        margin: 5px;
+    }
+    #container .box1,
+    .box2 p {
+        font-size: 18px;
+    }
+    .h2size {
+        font-size: 18px;
+    }
+    #container .box1 img {
+        height: 150px;
+        width: 190px;
+    }
+    #container .box2 img {
+        height: 150px;
+        width: 190px;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    #navbar ul li {
+        list-style: none;
+        padding: 37px 45px;
+        font-size: 1.3rem;
+    }
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 70px;
+    }
+    #logo img {
+        width: 240px;
+        height: 100px;
+    }
+    #navbar ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 20px;
+    }
+    #navbar ul li a {
+        font-size: 18px;
+    }
+    #logo img {
+        padding-top: 4px;
+        width: 187px;
+        height: 111px;
+    }
+}
+
+@media screen and (max-width:1290px) and (min-width:1036px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 140px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 200px;
+    }
+    #logo img {
+        position: absolute;
+        top: 23px;
+        left: 150px;
+    }
+}

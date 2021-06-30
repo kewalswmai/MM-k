@@ -1,0 +1,34 @@
+/* Insta Icon */
+
+.fa {
+    padding: 10px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+.fa-instagram {
+    background: #ec4b36;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.hd {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(136, 85, 85);
+    opacity: .6;
+}
+
+.hdr {
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    color: rgb(255, 231, 10);
+    font-size: 18px;
+}

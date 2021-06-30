@@ -1,0 +1,370 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background: url('services/servicess.jpg') no-repeat center/cover; */
+    background: linear-gradient(lavender, chocolate);
+}
+
+
+/* Navabr */
+
+#logo img {
+    width: 254px;
+    height: 117px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: #2d2c2c;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 37px 50px;
+    font-size: 1.3rem;
+}
+
+#navbar ul {
+    display: flex;
+    float: right;
+    padding: 0px 190px;
+}
+
+hr {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(41, 41, 41);
+    opacity: .6;
+}
+
+
+/* Button */
+
+form input[type=submit] {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    background: #0e1c36;
+    display: inline-block;
+    padding: .65em 2em;
+    border: none;
+    border-radius: 0;
+    transition: 0.25s ease-in-out;
+}
+
+
+/* Container */
+
+#container {
+    display: grid;
+    grid-template-areas: 'form form cnt cnt';
+    justify-content: center;
+}
+
+.frm {
+    grid-area: form;
+    background: rgba(100, 0, 0, .5);
+}
+
+.dtl {
+    grid-area: cnt;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+/* Form */
+
+textarea {
+    border: 3px solid #CCC;
+    outline: none;
+    border-radius: 11px;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form select {
+    width: 90%;
+    height: 40px;
+    border: 3px solid #CCC;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    border-radius: 11px;
+}
+
+form label {
+    float: left;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding-top: 20px;
+}
+
+form div {
+    position: relative;
+    margin-bottom: .5em;
+}
+
+
+/* Utility */
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 40px;
+    color: yellow;
+}
+
+.dtl p {
+    font-size: 22px;
+    line-height: 1.5;
+    color: white;
+    margin-left: 70px;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+/* Top_nav */
+
+.top_nav {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    #navbar {
+        display: none;
+    }
+    .top_nav {
+        display: block;
+    }
+    .icon {
+        font-size: 35px;
+        background: #001f44;
+        text-align: right;
+        /* z-index: -2; */
+    }
+    .icon,
+    .nav_items {
+        position: relative;
+        top: -73px;
+        right: 0px;
+    }
+    .icon a i {
+        color: #fff;
+    }
+    .nav_items {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #00316b;
+        z-index: -5;
+    }
+    .nav_items ul li {
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 2px 10px 2px;
+    }
+    .nav_items ul li:hover {
+        background: #006740;
+        border: 2px solid #006740;
+        border-radius: 4px;
+    }
+    .nav_items ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo1 img {
+        width: 129px;
+        height: 62px;
+        position: relative;
+        top: 69px;
+        left: center;
+    }
+    .responsive {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:1290px) {
+    #navbar ul li {
+        list-style: none;
+        padding: 37px 45px;
+        font-size: 1.3rem;
+    }
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 70px;
+    }
+    #logo img {
+        width: 240px;
+        height: 100px;
+    }
+    #navbar ul li a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 20px;
+    }
+    #navbar ul li a {
+        font-size: 18px;
+    }
+    #logo img {
+        padding-top: 4px;
+        width: 150px;
+        height: 111px;
+    }
+    .dtl p {
+        font-size: 19px;
+        line-height: 2.5;
+    }
+    form input[type=text],
+    form input[type=email],
+    form input[type=tel],
+    form select {
+        width: 90%;
+        height: 35px;
+        border: 1px solid #CCC;
+    }
+    form label {
+        float: left;
+        color: white;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:1290px) and (min-width:1036px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 140px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 390px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #navbar {
+        display: none;
+    }
+    .top_nav {
+        display: block;
+    }
+    .icon {
+        font-size: 35px;
+        background: #001f44;
+        text-align: right;
+        /* z-index: -2; */
+    }
+    .icon,
+    .nav_items {
+        position: relative;
+        top: -67px;
+        right: -6px;
+    }
+    .icon a i {
+        color: #fff;
+    }
+    .nav_items {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background: #00316b;
+    }
+    .nav_items ul li {
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 2px 10px 2px;
+    }
+    .nav_items ul li:hover {
+        background: #006740;
+        border: 2px solid #006740;
+        border-radius: 4px;
+    }
+    .nav_items ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .logo1 img {
+        width: 129px;
+        height: 62px;
+        position: relative;
+        top: 69px;
+        left: 36px;
+    }
+    .responsive {
+        display: flex;
+    }
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    form label {
+        font-size: 15px;
+    }
+    form input[type=submit] {
+        font-size: 18px;
+    }
+    .dtl p {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #container {
+        display: grid;
+        grid-template-areas: 'form form form form' 'cnt cnt cnt cnt';
+        justify-content: center;
+    }
+    .dtl {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:355px) {
+    .frm,
+    .dtl {
+        width: 85%;
+        margin: 30px;
+    }
+    .dtl {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    #navbar ul {
+        display: flex;
+        float: right;
+        padding: 0px 200px;
+    }
+    #logo img {
+        position: absolute;
+        top: 23px;
+        left: 150px;
+    }
+}
