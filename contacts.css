@@ -167,7 +167,7 @@ h1 {
         flex-direction: column;
         text-align: center;
         background: #00316b;
-        z-index: -5;
+        
     }
     .nav_items ul li {
         list-style: none;
